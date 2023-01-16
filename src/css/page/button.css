@@ -1,0 +1,44 @@
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 420px;
+    height: 56px;
+
+    border-radius: 8px;
+    border-style: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+    margin-bottom: 16px;
+
+    transition: .3s ease-in-out;
+}
+
+.btn:last-of-type {
+    margin: 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--pink-5);
+}
+
+/* TODO: Remove this property when the website be finished */
+.btn:last-of-type {
+    pointer-events: none;
+}
+
+.btn-enable {
+    background-color: var(--pink-1);
+    color: var(--pink-2);
+}
+
+.btn-disable {
+    background-color: var(--pink-3);
+    color: var(--pink-4);
+}
