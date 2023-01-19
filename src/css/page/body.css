@@ -39,21 +39,29 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 60px;
 }
 
+.content:first-of-type {
+    margin-top: 30px;
+}
+
 .content:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 18px;
     flex-direction: row;
 }
 
 .content h2 {
     font-weight: 600;
     font-size: 20px;
+    line-height: 26px;
 
     color: var(--grey-2);
+
+    margin-bottom: 4px;
 }
 
 .content p {
     font-weight: 500;
     font-size: 12px;
+    line-height: 18px;
 
     color: var(--grey-3);
 }
@@ -68,5 +76,5 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .clock-icon {
-    margin-right: 8px;
+    margin-right: 4px;
 }
