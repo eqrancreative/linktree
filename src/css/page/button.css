@@ -42,3 +42,9 @@
     background-color: var(--pink-3);
     color: var(--pink-4);
 }
+
+@media (max-width: 520px) {
+    .btn {
+        width: 290px
+    }
+}

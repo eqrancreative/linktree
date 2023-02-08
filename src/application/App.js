@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Button from "./components/Button";
 import * as img from "../img/__img__";
 import "../css/style.css";
+import GlassIcon from "./components/GlassIcon";
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     const [hour] = useState(new Date().getHours())
 
     const handleClock = () => {
-        return day < 6 && day > 1 && hour < 18 ?
+        return day <= 6 && day > 1 && hour < 18 ?
             img.clockOpen
             :
             img.clockClose
@@ -60,6 +61,8 @@ function App() {
                     </p>
                 </div>
             </div>
+            <GlassIcon icon={img.boy} alt={"Ícone de jaqueta"} styleClass={"glass-icon jacket"}/>
+            <GlassIcon icon={img.girl} alt={"Ícone de vestido"} styleClass={"glass-icon dress"}/>
         </main>
     )
 }
