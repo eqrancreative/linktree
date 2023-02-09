@@ -1,7 +1,7 @@
 {
   "short_name": "Enfance Closet",
   "name": "Enfance Closet",
-  "start_url": "./index.html",
+  "start_url": "/linktree/index.html",
   "display": "standalone",
   "icons": [
     {
