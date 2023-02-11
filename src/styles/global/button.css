@@ -48,3 +48,9 @@
         width: 290px
     }
 }
+
+@media (max-width: 375px) {
+    .btn {
+        width: 270px
+    }
+}

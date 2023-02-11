@@ -1,8 +1,7 @@
-import React, {useState} from "react";
-import Button from "./components/Button";
-import * as img from "../img/__img__";
-import "../css/style.css";
-import GlassIcon from "./components/GlassIcon";
+import React, { useState } from "react";
+import Button from "../components/Button";
+import GlassIcon from "../components/GlassIcon";
+import "../styles/style.css";
 
 function App() {
 
@@ -11,18 +10,18 @@ function App() {
 
     const handleClock = () => {
         return day <= 6 && day > 1 && hour < 18 ?
-            img.clockOpen
+            "/linktree/assets/clock-open.svg"
             :
-            img.clockClose
+            "/linktree/assets/clock-close.svg"
     }
 
     return (
         <main>
             <div className={"container"}>
                 <div className={"content"}>
-                    <img src={img.logo} alt={"JM Log"} className={"logo"}/>
+                    <img src={"/linktree/assets/logo.svg"} alt={"JM Log"} className={"logo"} />
                     <h2>
-                        João & Maria Closet
+                        Enfance Closet
                     </h2>
                     <p className={"subtitle"}>
                         Vestindo príncipes e princesas com qualidade e conforto.
@@ -30,7 +29,7 @@ function App() {
                 </div>
                 <div className={"content"}>
                     <Button
-                        icon={img.whatsapp}
+                        icon={"/linktree/assets/whatsapp.svg"}
                         description={"FALE CONOSCO"}
                         enable={true}
                         action={() => {
@@ -38,7 +37,7 @@ function App() {
                         }}
                     />
                     <Button
-                        icon={img.email}
+                        icon={"/linktree/assets/email.svg"}
                         description={"ENVIE UM EMAIL"}
                         enable={true}
                         action={() => {
@@ -46,9 +45,9 @@ function App() {
                         }}
                     />
                     <Button
-                        icon={img.website}
+                        icon={"/linktree/assets/website.svg"}
                         description={"ACESSE NOSSO SITE"}
-                        enable={false}/>
+                        enable={false} />
                 </div>
                 <div className={"content"}>
                     <img
@@ -61,8 +60,8 @@ function App() {
                     </p>
                 </div>
             </div>
-            <GlassIcon icon={img.boy} alt={"Ícone de jaqueta"} styleClass={"glass-icon jacket"}/>
-            <GlassIcon icon={img.girl} alt={"Ícone de vestido"} styleClass={"glass-icon dress"}/>
+            <GlassIcon icon={"/linktree/assets/boy.svg"} alt={"Ícone de jaqueta"} styleClass={"glass-icon jacket"} />
+            <GlassIcon icon={"/linktree/assets/girl.svg"} alt={"Ícone de vestido"} styleClass={"glass-icon dress"} />
         </main>
     )
 }
