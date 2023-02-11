@@ -20,5 +20,5 @@ You may also see any lint errors in the console.
 ## **Team**
 
 UI Design **@nivertonfamorim**  
-Development **@barcelodev**
+Development **@barcelosdev**
 
